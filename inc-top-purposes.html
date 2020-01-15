@@ -1,0 +1,62 @@
+<div class="top-purposes">
+	<div class="inner">
+		
+		<div class="popular-carousel top-purposes-carousel">
+			<div class="top-purpose-item">
+				<div class="top-purpose-img"><a href="#"><img src="images/redesign/top-1.jpg" alt="alt"></a></div>
+				<div class="top-purpose-descr">
+					<div class="top-purpose-title"><a href="#">Отдых в Греции</a></div>
+					<div class="top-purpose-price">от <span class="color-red">325€ / чел.</span></div>
+				</div>
+			</div>
+
+			<div class="top-purpose-item">
+				<div class="top-purpose-img"><a href="#"><img src="images/redesign/top-2.jpg" alt="alt"></a></div>
+				<div class="top-purpose-descr">
+					<div class="top-purpose-title"><a href="#">Отдых в Египте</a></div>
+					<div class="top-purpose-price">от <span class="color-red">375€ / чел.</span></div>
+				</div>
+			</div>
+
+			<div class="top-purpose-item">
+				<div class="top-purpose-img"><a href="#"><img src="images/redesign/top-3.jpg" alt="alt"></a></div>
+				<div class="top-purpose-descr">
+					<div class="top-purpose-title"><a href="#">Отдых в Турции</a></div>
+					<div class="top-purpose-price">от <span class="color-red">225€ / чел.</span></div>
+				</div>
+			</div>
+
+			<div class="top-purpose-item">
+				<div class="top-purpose-img"><a href="#"><img src="images/redesign/top-1.jpg" alt="alt"></a></div>
+				<div class="top-purpose-descr">
+					<div class="top-purpose-title"><a href="#">Отдых на западном побережье острова Тенерифе</a></div>
+					<div class="top-purpose-price">от <span class="color-red">1725€ / чел.</span></div>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+</div><!--.top-purposes-->
+
+<script>
+jQuery(document).ready(function($) {
+	$('.popular-carousel').owlCarousel({
+	loop:true,
+	margin:45,
+	nav:true,
+	responsive:{
+	0:{
+	items:1
+	},
+	470:{
+	items:2
+	},
+	768:{
+	items:3
+	}
+	}
+	});
+});
+</script>
