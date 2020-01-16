@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded",function(){
 		this.nextElementSibling.classList.toggle('opened')
 	});
 
+	$(".mask-phone").mask("+375 (999)-999-99-99");
 
-	
 
 });

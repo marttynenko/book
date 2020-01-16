@@ -116,26 +116,147 @@
 <div id="content" class="content">
 
 	<div class="inner">
+
+		<div class="breadcrumbs breadcrumbs-redesign">
+			<a href="#">Главная</a>
+			<span>Оформление тура</span>
+		</div>
 		
-		<h2>Страницы</h2>
+		<h1 class="page-title">Оформление тура</h1>
+		
+		<div class="cart-step">
+			<div class="cart-items">
+				<div class="cart-item flex valign-center">
+					<div class="cart-item-img"><a href="#"><img src="images/redesign/cart-item-1.jpg" alt="alt"></a></div>
 
-		<ol class="ui-marked">
-			<li><a href="index.html" target="_blank">Новая главная</a></li>
-			<li><a href="card.html" target="_blank">Новая карточка предложения</a></li>
-			<li><a href="ordering.html" target="_blank">Оформление тура</a></li>
-		</ol>
+					<div class="cart-item-info">
+						<div class="cart-item-name"><a href="#">Отдых в ОАЭ</a></div>
+						<div class="cart-item-date">Дата вылета: <span>31 декабря 2020</span></div>
+						<div class="cart-item-advantages">
+							<span>Завтраки</span>
+							<span>8 дней с перелетом</span>
+							<span>Трансфер до аэропорта</span>
+						</div>
+					</div>
+					<div class="cart-item-price">325 €</div>
+					<div class="cart-item-amount">
+						<div class="ui-amount">
+							<a href="javascript:void(0)" class="ui-amount-minus">-</a>
+							<input type="text" class="ui-amount-input" value="1">
+							<a href="javascript:void(0)" class="ui-amount-plus">+</a>
+						</div>
+					</div>
+					<div class="cart-item-summ">325 €</div>
+					<a href="javascript:void(0)" class="cart-item-remove"></a>
+				</div><!--.cart-item-->
+			</div>
 
-		<h2>Попапы</h2>
+			<div class="cart-appeal">
+				<div class="cart-appeal-icon">!</div>
+				За последние 24 часа данный тур заказывали несколько раз. Количество предложений по данной цене ограничено.
+			</div>
 
-		<ol class="ui-marked">
-			<li><a href="javascript:void(0)" data-href="popup-phones-for-order.html" class="a-ajax-data">Вы можете заказать тур по телефону</a></li>
-			<li><a href="javascript:void(0)" data-href="popup-offer-order.html" class="a-ajax-data">Заявка на подбор</a></li>
-			<li><a href="javascript:void(0)" data-href="popup-thanks.html" class="a-ajax-data">Отлично, ожидайте связи с менеджером</a></li>
-			<li><a href="javascript:void(0)" data-href="popup-thanks-2.html" class="a-ajax-data">Отлично, ожидайте связи с менеджером. Второй вариант</a></li>
-			<li><a href="javascript:void(0)" data-href="popup-uh.html" class="a-ajax-data">Ух!</a></li>
-			<li><a href="javascript:void(0)" data-href="popup-phone-order.html" class="a-ajax-data">Заказ тура по телефону</a></li>
-		</ol>
-		<br>
+			<div class="cart-btns flex align-justify valign-center">
+				<a href="javascript:void(0)" data-href="popup-phone-order.html" class="btn btn-midi btn-red-bordered a-ajax-data">
+					<svg class="sprite svg-btn-icon svg-btn-phone">
+					  <use xlink:href="svg/svg/symbols.svg#phone-in-hand"/>
+					</svg>
+					Заказать тур по телефону
+				</a>
+				<div class="cart-btns-right">
+					<span class="cart-total">
+						<span class="cart-total-label">Всего к оплате:</span>
+						<span class="cart-total-summ">650 €</span>
+					</span>
+					<a href="#" class="btn btn-midi btn-red">Продолжить</a>
+				</div>
+			</div><!--.cart-btns-->
+		</div><!--.cart-step-->
+
+
+		<div class="cart-step cart-step-numbered">
+			<div class="cart-step-header">
+				<div class="cart-step-number">1</div>
+				Контактная информация
+			</div>
+
+			<form action="" novalidate>
+
+				<div class="row">
+					<div class="flx-6 flx-x-12">
+						<div class="ui-field">
+							<label for="" class="label-block">Телефон<span class="req">*</span></label>
+							<input type="text" class="ui-input ui-input-light mask-phone" placeholder="+375 (___)-___-__-__">
+							<div class="ui-field-hint">Пожалуйста, введите номер телефона, по которому с вами можно связатся</div>
+						</div>
+					</div>
+					<div class="flx-6 flx-x-12">
+						<div class="ui-field">
+							<label for="" class="label-block">Электронная почта<span class="req">*</span></label>
+							<input type="email" class="ui-input ui-input-light" placeholder="yourmail@mail.ru">
+							<div class="ui-field-hint">Введите точный адрес электронной почты, на который мы отправим вам документы для путешествия. Дождитесь подтверждения от оператора.</div>
+						</div>
+					</div>
+					<div class="flx-6 flx-x-12">
+						<div class="ui-field">
+							<label for="" class="label-block">ФИО заказчика по туру (крирллицей)</label>
+							<input type="text" class="ui-input ui-input-light" placeholder="Иванов Иван Иванович">
+						</div>
+					</div>
+				</div>
+
+				<div class="ui-field">
+					<label for="f_confirm" class="label-styler color-gray">
+						<input type="checkbox" name="f_confirm" id="f_confirm" checked>
+						<span>Согласен(а) на <a href="#">обработку и хранение персональных данных</a></span>
+					</label>
+				</div>
+
+				<br>
+
+				<div class="cart-btns flex align-justify valign-center">
+					<a href="javascript:void(0)" data-href="popup-phone-order.html" class="btn btn-midi btn-red-bordered a-ajax-data">
+						<svg class="sprite svg-btn-icon svg-btn-phone">
+						  <use xlink:href="svg/svg/symbols.svg#phone-in-hand"/>
+						</svg>
+						Заказать тур по телефону
+					</a>
+					<button class="btn btn-midi btn-red btn-auto">Оформить</button>
+				</div><!--.cart-btns-->
+			</form>
+		</div><!--.cart-step-->
+
+
+		<div class="cart-step cart-step-numbered">
+			<div class="cart-step-header">
+				<div class="cart-step-number">2</div>
+				Связь с оператором и платеж
+			</div>
+			<div class="cart-step-thanks">
+				<h2 class="color-blue">Спасибо!</h2>
+				<p>Вы предоставили нам первичные данные, необходимые для запроса данного варианта отдыха. Система назначит вам личного менеджера, который в любом случае свяжется с вами в период с 10:00 до 21:00. В случае первичного подтверждения тарифа вам будет выслана ссылка для оплаты тура банковской картой или же реквизиты для оплаты тура через интернет-банкинг.</p>
+				<p>Ваш заказ с номером <span class="cart-order-number">27111901</span> принят в работу. Ожидайте, пожалуйста, связи с AVIABALTIC.</p>
+				<br>
+
+				<form action="" novalidate>
+					<div class="ui-field">
+						<label for="" class="label-block">Комментарий к заявке</label>
+						<textarea name="" id="" rows="8" class="ui-input ui-input-light" placeholder="Здесь вы можете внести любые пожелания по заказу или оставить сообщение"></textarea>
+					</div>
+					<button class="btn btn-midi btn-red-bordered btn-auto">Отправить сообщение</button>
+				</form>
+			</div><!--.thanks-->
+		</div><!--.cart-step-->
+
+		<div class="cart-total-btns flex align-justify valign-center">
+			<a href="javascript:void(0)" data-href="popup-phone-order.html" class="btn btn-midi btn-red-bordered a-ajax-data">
+				<svg class="sprite svg-btn-icon svg-btn-phone">
+				  <use xlink:href="svg/svg/symbols.svg#phone-in-hand"/>
+				</svg>
+				Заказать тур по телефону
+			</a>
+			<a href="#" class="btn btn-midi btn-red">На главную</a>
+		</div>
 		
 	</div><!--.inner-->
 
