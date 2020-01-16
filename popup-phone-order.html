@@ -1,0 +1,47 @@
+<div id="popup-phone-order" class="white-popup popup-phone-order zoom-anim-dialog">
+  <div class="white-popup-inner">
+    
+    <div class="popup-tour centered">
+      <div class="popup-tour-img"><img src="images/redesign/popup-phone-order.jpg" alt="alt"></div>
+      <div class="popup-tour-name">Отдых в ОАЭ</div>
+      <div class="popup-tour-date">Дата вылета: <span>31 декабря 2020</span></div>
+      <div class="popup-tour-title"><span>Заказать тур по телефону</span></div>
+    </div>
+    
+    <form action="" novalidate>
+      <div class="ui-field">
+        <input type="text" class="ui-input" placeholder="Имя">
+      </div>
+
+      <div class="ui-field">
+        <input type="tel" class="ui-input" placeholder="Номер телефона">
+      </div>
+
+      <div class="ui-field">
+        <label for="f_confirm" class="label-styler color-gray">
+          <input type="checkbox" name="f_confirm" id="f_confirm" checked>
+          <span>Согласен на <a href="#">обработку и хранение персональных данных</a></span>
+        </label>
+      </div>
+
+      <div class="ui-field-btn">
+        <a href="#" class="btn btn-big btn-red btn-block">Заказать</a>
+      </div>
+
+      
+
+    </form>
+  </div>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+
+    //стилизация элементов форм
+    $('.white-popup input[type="checkbox"], .white-popup  input[type="radio"], .white-popup input[type="file"], .white-popup select').styler({
+      singleSelectzIndex: '1',
+    });
+
+
+
+  });
+</script>
+</div>

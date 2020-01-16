@@ -1,0 +1,79 @@
+<div id="popup-phones" class="white-popup popup-phones zoom-anim-dialog">
+  <div class="white-popup-inner">
+
+    <div class="white-popup-title">
+      Вы можете заказать данный тур по телефону в любом городе, назвав оператору код предложения
+      <div class="phone-order-code">27111901</div>
+    </div>
+    
+    <form action="">
+      <div class="ui-field">
+        <select name="" id="" class="ui-input city-phones-toggler">
+          <option value="1" data-city="minsk">Минск</option>
+          <option value="2" data-city="gomel">Гомель</option>
+          <option value="3" data-city="grodno">Гродно</option>
+        </select>
+      </div>
+
+      <div class="ui-field">
+        <div class="phone-order-phones opened" data-city="minsk">
+          <div class="phone-order-phone">
+            <a href="tel:+375447412474">+375 (44) 741-24-74</a>
+            <i class="phone-order-phone-icon"><img src="images/redesign/i-viber.svg" alt="viber"></i>
+          </div>
+          <div class="phone-order-phone">
+            <a href="tel:+375297412474">+375 (29) 741-24-74</a>
+          </div>
+        </div>
+        <div class="phone-order-phones" data-city="gomel">
+          <div class="phone-order-phone">
+            <a href="tel:+37525992474">+375 (25) 99-24-74</a>
+            <i class="phone-order-phone-icon"><img src="images/redesign/i-viber.svg" alt="viber"></i>
+          </div>
+        </div>
+        <div class="phone-order-phones" data-city="grodno">
+          <div class="phone-order-phone">
+            <a href="tel:+375259995574">+375 (25) 999-55-74</a>
+            <i class="phone-order-phone-icon"><img src="images/redesign/i-viber.svg" alt="viber"></i>
+          </div>
+        </div>
+      </div><!--.field-->
+
+      <div class="ui-field-btn">
+        <a href="#" class="btn btn-big btn-red btn-block">Узнать наши адреса</a>
+      </div>
+
+      
+
+    </form>
+  </div>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+
+    //стилизация элементов форм
+    $('.white-popup input[type="checkbox"], .white-popup  input[type="radio"], .white-popup input[type="file"], .white-popup select').styler({
+      singleSelectzIndex: '1',
+    });
+
+
+    $(document).on('change','select.city-phones-toggler',function(){
+      var $option = $(this).find(':selected');
+      var $city = $option.attr('data-city') || 0;
+
+      $('.phone-order-phones').removeClass('opened');
+      $('.phone-order-phones[data-city="'+$city+'"]').addClass('opened');
+    });
+
+
+    /*$("#popup-phone-order-form").validate({
+      rules: {
+        
+      },
+      submitHandler: function(){
+        //сабмит формы
+      }
+    });*/
+
+  });
+</script>
+</div>

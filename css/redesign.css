@@ -336,7 +336,9 @@ i.star { display: inline-block; vertical-align: middle; margin-right: 3px; width
 
 i.star.filled { background: url("../images/svg/star-filled.svg") center no-repeat; background-size: contain; }
 
-.btn-block { display: block; padding: 0px 5px; text-align: center; margin-bottom: 10px; }
+.btn-block { display: block; width: 100%; padding: 0px 5px; text-align: center; margin-bottom: 10px; }
+
+.btn-big { height: 60px; line-height: 60px; font-size: 18px; font-size: 1.28571rem; text-transform: none; }
 
 .btn-red { background: #FF1341; border-color: #FF1341; }
 
@@ -448,7 +450,7 @@ CARD --------------------- */
 
 .offer-info-prices .price-marked { color: #FF1341; font-weight: 700; font-size: 17px; font-size: 1.21429rem; }
 
-.offer-info-prices .price-gray { color: #989898; }
+.offer-info-prices .price-gray { color: #989898; margin-right: 10px; }
 
 .offer-info-btns { margin-bottom: 20px; }
 
@@ -508,6 +510,8 @@ h5, .h5 { font-size: 16px; font-size: 1.14286rem; font-weight: 700; margin-botto
 
 .offer-info-code-attention { position: absolute; left: 30px; top: 28px; display: inline-block; width: 24px; height: 24px; line-height: 24px; text-align: center; font-weight: 700; background: #FFF; border-radius: 50%; color: #0BB1CF; font-size: 18px; font-size: 1.28571rem; }
 
+.offer-info-code-code { font-size: 18px; font-size: 1.28571rem; font-weight: 700; }
+
 .ui-share { margin-bottom: 15px; }
 
 .ui-share ul { margin: 0; padding: 0; }
@@ -517,3 +521,109 @@ h5, .h5 { font-size: 16px; font-size: 1.14286rem; font-weight: 700; margin-botto
 .offer-info-activity .offer-card-stars, .offer-info-activity .offer-card-likes { display: inline-block; vertical-align: middle; margin: 0px 10px 10px; }
 
 .offer-info-activity .offer-card-likes { top: 2px; }
+
+.select-micro { display: inline-block; vertical-align: middle; width: auto; }
+
+.select-micro .jq-selectbox { width: auto; }
+
+.select-micro .jq-selectbox__select { height: 20px; line-height: 18px; border: 1px solid #0BB1CF; border-radius: 2px; padding: 0px 20px 0px 10px; }
+
+.select-micro .jq-selectbox__select-text { line-height: 18px; }
+
+.select-micro .jq-selectbox__trigger { width: 20px; }
+
+.select-micro .jq-selectbox__trigger-arrow { top: 0; bottom: 0; left: 0; right: 0; margin: auto; }
+
+.select-micro .jq-selectbox__dropdown { top: 19px; border: 1px solid #0BB1CF; border-radius: 0px 0px 2px 2px; }
+
+.select-micro .jq-selectbox__dropdown li { padding: 3px 8px; min-height: 0; }
+
+.select-micro .jq-selectbox__dropdown li:hover, .select-micro .jq-selectbox__dropdown li.selected { color: #0BB1CF; }
+
+/* --- 
+POPUPS --------------------- */
+.white-popup { width: 96%; max-width: 450px; background: #FFF; margin: 20px auto; padding: 40px 35px; position: relative; line-height: 1.42; color: #002643; font-family: 'Ubuntu'; }
+
+.white-popup-title { font-size: 20px; font-size: 1.42857rem; margin-bottom: 30px; text-align: center; }
+
+.white-popup-bluetitle { font-size: 36px; font-size: 2.57143rem; color: #0BB1CF; font-weight: 700; margin-bottom: 10px; text-align: center; }
+
+.white-popup-txt { font-size: 16px; font-size: 1.14286rem; font-weight: 500; text-align: center; }
+
+.white-popup .mfp-close { background: url("../images/svg/close.svg") center no-repeat !important; background-size: 20px !important; }
+
+.centered { text-align: center; }
+
+.phone-order-code { font-size: 28px; font-size: 2rem; font-weight: 700; color: #0BB1CF; }
+
+.phone-order-phones { display: none; }
+
+.phone-order-phones.opened { display: block; }
+
+.phone-order-phone { font-size: 20px; font-size: 1.42857rem; font-weight: 500; margin-bottom: 10px; }
+
+.phone-order-phone a { color: #002643; text-decoration: none; }
+
+.phone-order-phone a:hover { color: #0BB1CF; }
+
+.phone-order-phone-icon { display: inline-block; vertical-align: middle; margin-left: 5px; width: 26px; }
+
+.ui-field { margin-bottom: 20px; }
+
+.ui-field-btn { padding-top: 15px; }
+
+input.ui-input, select.ui-input, textarea.ui-input { height: 50px; display: block; width: 100%; background: #f5f5f5; padding: 0px 20px; font-size: 16px; font-size: 1.14286rem; border: 0; color: rgba(29, 64, 90, 0.9); }
+
+.ui-input .jq-selectbox__select { height: 50px; background: #f5f5f5; padding: 0px 20px; font-size: 16px; font-size: 1.14286rem; border: 0; color: rgba(29, 64, 90, 0.7); }
+
+.ui-input .jq-selectbox__select { line-height: 50px; padding-right: 40px; }
+
+.ui-input .jq-selectbox__select-text { line-height: 50px; }
+
+.ui-input .jq-selectbox__trigger-arrow { left: 0; right: 0; top: 0; bottom: 0; margin: auto; }
+
+.ui-input .jq-selectbox__dropdown { top: 50px; border: 1px solid #ddd; }
+
+.ui-input .jq-selectbox__dropdown[style*="top: auto"] { bottom: 50px !important; }
+
+.ui-input .jq-selectbox__dropdown ul { padding: 5px 0; }
+
+.ui-input .jq-selectbox__dropdown li { min-height: 0; padding: 5px 20px; }
+
+.label-styler { position: relative; margin-bottom: 8px; font-weight: 400; padding-left: 30px; }
+
+.label-styler .jq-radio, .label-styler .jq-checkbox { position: absolute !important; left: 0; top: -2px; width: 24px; height: 24px; border: 1px solid #0BB1CF; box-shadow: none; }
+
+.label-styler .jq-radio.checked, .label-styler .jq-checkbox.checked { background: #0BB1CF; }
+
+.label-styler .jq-checkbox.checked .jq-checkbox__div { background: none; position: absolute; width: 12px; height: 7px; left: 3px; top: 3px; transform: rotate(-45deg); border-bottom: 2px solid #FFF; border-left: 2px solid #FFF; }
+
+.label-styler .jq-radio.checked .jq-radio__div { background: none; position: absolute; width: 12px; height: 12px; left: 0; right: 0; top: 0; bottom: 0; margin: auto; border-radius: 50%; background: #FFF; }
+
+.popup-light { padding-top: 60px; padding-bottom: 60px; }
+
+.popup-light-title { font-size: 20px; font-size: 1.42857rem; font-weight: 700; text-align: center; }
+
+.popup-tour { margin-bottom: 25px; text-align: center; }
+
+.popup-tour-img { margin-bottom: 15px; }
+
+.popup-tour-img img { line-height: 0; }
+
+.popup-tour-name { font-size: 20px; font-size: 1.42857rem; font-weight: 700; }
+
+.popup-tour-date { color: #707070; margin-bottom: 18px; }
+
+.popup-tour-date span { color: #0BB1CF; font-weight: 700; }
+
+.popup-tour-title { position: relative; font-weight: 500; font-size: 16px; font-size: 1.14286rem; }
+
+.popup-tour-title:after { content: ""; position: absolute; left: 0; right: 0; top: 50%; height: 1px; background: #f2f2f2; }
+
+.popup-tour-title span { position: relative; z-index: 1; background: #FFF; padding: 0px 10px; }
+
+.color-gray { color: #707070; }
+
+.color-gray a { color: #707070; }
+
+.color-gray a:hover { color: #0BB1CF; }

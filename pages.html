@@ -116,173 +116,26 @@
 <div id="content" class="content">
 
 	<div class="inner">
-		<div class="breadcrumbs breadcrumbs-redesign">
-			<a href="#">Главная</a>
-			<a href="#">Люкс</a>
-			<span>Отдых в ОАЭ</span>
-		</div>
+		
+		<h2>Страницы</h2>
 
-		<div class="offer">
-			<div class="row">
-				<div class="flx-card-imgs flx-6 flx-m-12">
-					<div class="owl-offer">
-						<div class="owl-offer-slide"><img src="images/redesign/card-1.jpg" alt="alt"></div>
-						<div class="owl-offer-slide"><img src="https://via.placeholder.com/615x389/000/FFF" alt="alt"></div>
-						<div class="owl-offer-slide"><img src="https://via.placeholder.com/615x389/FF0000/FFF" alt="alt"></div>
-						<div class="owl-offer-slide"><img src="https://via.placeholder.com/615x389/00FF00/FFF" alt="alt"></div>
-						<div class="owl-offer-slide"><img src="https://via.placeholder.com/615x389/0000FF/FFF" alt="alt"></div>
-					</div>
-					<script>
-						jQuery(document).ready(function($) {
-							$('.owl-offer-slide').each(function(key,item){
-								$(item).attr('data-index',key);
-							});
-							if ($('.owl-offer-slide').length > 1) {
-								var miniOfferOwl = $('.owl-offer-slide').clone().addClass('mini-owl-offer-slide').removeClass('owl-offer-slide');
-								$('.owl-offer').after('<div class="mini-owl-offer"></div>');
-								$('.mini-owl-offer').prepend(miniOfferOwl);
-								$('.mini-owl-offer-slide:first').addClass('active');
+		<ol class="ui-marked">
+			<li><a href="index.html" target="_blank">Новая главная</a></li>
+			<li><a href="card.html" target="_blank">Новая карточка предложения</a></li>
+		</ol>
 
+		<h2>Попапы</h2>
 
-								$('.owl-offer').owlCarousel({
-									margin:0,
-									nav:true,
-									items:1,
-									loop: true
-								});
-								$('.owl-offer').on('changed.owl.carousel', function(event){
-									// console.log(event);
-									console.log(event.page.index);
-									var $index = event.page.index;
-									$('.mini-owl-offer-slide').removeClass('active');
-									$('.mini-owl-offer-slide[data-index="'+$index+'"').addClass('active');
-								});
-
-								$('.mini-owl-offer').owlCarousel({
-									margin: 20,
-									nav: true,
-									items: 4,
-									loop: true
-								});
-
-								$(document).on('click','.mini-owl-offer-slide',function(e){
-									e.preventDefault();
-									var $index = $(this).attr('data-index');
-									$('.owl-offer').trigger('to.owl.carousel',$index);
-									$('.mini-owl-offer-slide').removeClass('active');
-									$(this).addClass('active');
-								});
-							}
-							
-						});
-					</script>
-				</div>
-
-				<div class="flx-card-info flx-6 flx-m-12">
-					<div class="offer-info">
-						
-						<div class="offer-info-date">Вылет 31 декабря 2019</div>
-
-						<h1 class="offer-info-title">Отдых в ОАЭ</h1>
-
-						<div class="offer-info-offer">Покоряем пятый океан!</div>
-
-						<div class="offer-info-advantages">
-							<span class="offer-info-advantage">Завтраки</span>
-							<span class="offer-info-advantage">8 дней с перелетом</span>
-						</div>
-
-						<div class="offer-info-activity">
-							<div class="offer-card-stars">
-								<span class="ui-stars">
-									<i class="star filled"></i>
-									<i class="star filled"></i>
-									<i class="star filled"></i>
-									<i class="star filled"></i>
-									<i class="star filled"></i>
-								</span>
-								<span>5 из 5</span>
-							</div>
-							<a href="#" class="offer-card-likes">1799</a>
-						</div>
-
-						<div class="offer-info-prices">
-							Цена: от <span class="price-marked">340 €/чел.</span> <span class="price-gray">(795 Br/чел.)</span>
-							<select name="" id="" class="select-micro">
-								<option value="1">€</option>
-								<option value="2">$</option>
-							</select>
-						</div>
-						<div class="offer-info-btns">
-							<a href="#" class="btn btn-red">Бронировать</a>
-							<a href="#" data-href="popup-phone-order.html" class="a-ajax-data btn btn-red-bordered">Позвонить</a>
-						</div>
-
-						<div class="offer-info-favorite">
-							<a href="#" class="offer-info-favorite-link">
-								<svg class="sprite svg-favorite">
-								  <use xlink:href="svg/svg/symbols.svg#heart"/>
-								</svg>
-								Добавить в избранное
-							</a>
-						</div>
-
-						<div class="offer-info-descr">
-							<h5>Описание скидки</h5>
-							<p>Скидка 200 евро на тур в ОАЭ на 8 дней</p>
-					
-							<h5>Условия</h5>
-							<p>- Промокод дает право на скидку 3% при покупке товаров в магазине Windsor<br>	
-							- Перед покупкой обязательно уточняйте возможность получения скидки<br>
-							- Скидка предоставляется только при наличии промокода</p>
-							
-							<h5>Поделиться в соцсетях:</h5>
-							<div class="ui-share">
-								<script src="https://yastatic.net/share2/share.js"></script>
-								<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,telegram"></div>
-							</div>
-						</div>
-
-						<div class="offer-info-social">
-							<div class="offer-info-social-item">
-								<a href="#" target="_balnk" class="offer-info-social-link">
-									<svg class="sprite svg-card-offer-social">
-									  <use xlink:href="svg/svg/symbols.svg#in-big"/>
-									</svg>
-									Насладитесь выгодными предложениями - подписаться в <strong>Instagram</strong>
-								</a>
-							</div>
-
-							<div class="offer-info-social-item">
-								<a href="#" target="_balnk" class="offer-info-social-link">
-									<svg class="sprite svg-card-offer-social">
-									  <use xlink:href="svg/svg/symbols.svg#tl-big"/>
-									</svg>
-									Акции и специальные тарифы в <strong>Telegram</strong>
-								</a>
-							</div>
-
-							<div class="offer-info-social-item">
-								<a href="#" target="_balnk" class="offer-info-social-link">
-									<svg class="sprite svg-card-offer-social">
-									  <use xlink:href="svg/svg/symbols.svg#fb-big"/>
-									</svg>
-									Поиск компании для поездки в Facebook
-								</a>
-							</div>
-
-						</div><!--.offer-info-social-->
-
-						<div class="offer-info-code">
-							<div class="offer-info-code-attention">!</div>
-							<p>Код предложения <span class="offer-info-code-code">27119011</span></p>
-							<p>Стоимость услуг может отличаться от указанной на сайте. Оператор перепроверит тарифы в процессе онлайн-бронирования услуги.</p>
-						</div>
-					</div><!--.offer-info-->
-				</div>
-
-			</div><!--.row-->
-		</div><!--.offer-->
+		<ol class="ui-marked">
+			<li><a href="javascript:void(0)" data-href="popup-phones-for-order.html" class="a-ajax-data">Вы можете заказать тур по телефону</a></li>
+			<li><a href="javascript:void(0)" data-href="popup-offer-order.html" class="a-ajax-data">Заявка на подбор</a></li>
+			<li><a href="javascript:void(0)" data-href="popup-thanks.html" class="a-ajax-data">Отлично, ожидайте связи с менеджером</a></li>
+			<li><a href="javascript:void(0)" data-href="popup-thanks-2.html" class="a-ajax-data">Отлично, ожидайте связи с менеджером. Второй вариант</a></li>
+			<li><a href="javascript:void(0)" data-href="popup-uh.html" class="a-ajax-data">Ух!</a></li>
+			<li><a href="javascript:void(0)" data-href="popup-phone-order.html" class="a-ajax-data">Заказ тура по телефону</a></li>
+		</ol>
+		<br>
+		
 	</div><!--.inner-->
 
 

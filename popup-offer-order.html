@@ -1,0 +1,59 @@
+<div id="popup-offer-order" class="white-popup popup-offer-order zoom-anim-dialog">
+  <div class="white-popup-inner">
+
+    <div class="white-popup-title">Мы учтем все Ваши пожелания <strong>и подберем 5 лучших вариантов</strong> отдыха по Вашему направлению</div>
+    
+    <form action="">
+      <div class="ui-field">
+        <input type="text" class="ui-input" placeholder="Ваше имя">
+      </div>
+
+      <div class="ui-field">
+        <input type="text" class="ui-input" placeholder="Город проживания">
+      </div>
+
+      <div class="ui-field">
+        <input type="text" class="ui-input" placeholder="Номер телефона*">
+      </div>
+
+      <div class="ui-field">
+        <input type="text" class="ui-input" placeholder="Страны отдыха">
+      </div>
+
+      <div class="ui-field">
+        <label for="f_to_messnger" class="label-styler">
+          <input type="checkbox" name="f_to_messenger" id="f_to_messenger">
+          <span>Просьба не звонить, а прислать варианты в <strong>Viber</strong> или <strong>Telegram</strong></span>
+        </label>
+      </div>
+
+
+      <div class="ui-field-btn">
+        <a href="#" class="btn btn-big btn-red btn-block">Отправить заявку</a>
+      </div>
+
+      
+
+    </form>
+  </div>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+
+    //стилизация элементов форм
+    $('.white-popup input[type="checkbox"], .white-popup  input[type="radio"], .white-popup input[type="file"], .white-popup select').styler({
+      singleSelectzIndex: '1',
+    });
+
+
+    /*$("#popup-offer-order-form").validate({
+      rules: {
+        
+      },
+      submitHandler: function(){
+        //сабмит формы
+      }
+    });*/
+
+  });
+</script>
+</div>

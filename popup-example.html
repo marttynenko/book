@@ -1,0 +1,54 @@
+<div id="popup-help" class="white-popup popup-help zoom-anim-dialog">
+  <div class="help-form">
+    <div class="help-form-head centered">
+      <div class="h2">Подать заявку</div>
+      <p>В вашей помощи нуждаются. Помочь очень просто!</p>
+    </div>
+    
+    <form action="">
+      <div class="field">
+        <select name="" id="" data-placeholder="Ребенку">
+          <option></option>
+          <option value="1">Элемент списка 1</option>
+          <option value="2">Элемент списка 2</option>
+          <option value="3">Элемент списка 3</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="" class="label-block">Введите ваше имя</label>
+        <input type="text" placeholder="Имя">
+      </div>
+
+      <div class="field">
+        <label for="" class="label-block">Введите диагноз</label>
+        <input type="text" placeholder="Диагноз">
+      </div>
+
+      <div class="field-submit">
+        <button class="btn btn-block">Подать заявку</button>
+      </div>
+
+    </form>
+  </div>
+<script type="text/javascript">
+  jQuery(document).ready(function($){
+
+    //стилизация элементов форм
+    $('.white-popup input[type="checkbox"], .white-popup  input[type="radio"], .white-popup input[type="file"], .white-popup select').styler({
+      singleSelectzIndex: '1',
+    });
+
+
+    /*$("#popup-help-form").validate({
+      rules: {
+        
+      },
+      submitHandler: function(){
+        //сабмит формы
+      }
+    });*/
+
+  });
+</script>
+</div>
